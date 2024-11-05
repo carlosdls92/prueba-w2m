@@ -1,0 +1,44 @@
+application:
+  title: W2M Prueba
+  version: 1.0
+server:
+  servlet:
+    context-path: /api/v1
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    #    url: jdbc:h2:file:/data
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  h2:
+    console.enabled: true
+logging:
+  level:
+    org:
+      hibernate:
+        jdbc:
+          bind: TRACE
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+
+#  data:
+#    redis:
+#      database: 0
+#      host: localhost
+#      port: 6379
+#      timeout: 60000
+

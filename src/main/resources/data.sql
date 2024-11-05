@@ -1,0 +1,10 @@
+INSERT INTO SHIPS (id, name, show_movie, date_created, date_modified)
+VALUES (1, 'ship 1', 'show A', parsedatetime('2024-11-04-00.00.00','yyyy-MM-dd-HH.mm.ss'), null);
+INSERT INTO SHIPS (id, name, show_movie, date_created, date_modified)
+VALUES (2, 'ship 2', 'movie A', parsedatetime('2024-11-04-00.00.00','yyyy-MM-dd-HH.mm.ss'), null);
+INSERT INTO SHIPS (id, name, show_movie, date_created, date_modified)
+VALUES (3, 'ship 3', 'show B', parsedatetime('2024-11-04-00.00.00','yyyy-MM-dd-HH.mm.ss'), null);
+INSERT INTO SHIPS (id, name, show_movie, date_created, date_modified)
+VALUES (4, 'ship 4', 'movie B', parsedatetime('2024-11-04-00.00.00','yyyy-MM-dd-HH.mm.ss'), null);
+INSERT INTO SHIPS (id, name, show_movie, date_created, date_modified)
+VALUES (5, 'ship 5', 'show C', parsedatetime('2024-11-04-00.00.00','yyyy-MM-dd-HH.mm.ss'), null);
